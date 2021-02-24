@@ -1,0 +1,53 @@
+import React from 'react';
+import './App.css';
+import Counter from './Components/Counter/Counter';
+import Navbar from './Components/Navbar/Navbar';
+import SmsApp from './Components/SmsApp';
+import Wish from './Components/Wish';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ShowPassword from './Components/ShowPassword';
+import ShowUsername from './Components/ShowUserName';
+import Table from './Components/Table';
+import SelectCar from './Components/SelectCar';
+import Parent from './Components/Simple/Parent';
+import RegistrationForm from './Components/RegistrationForm';
+import LoginLogoutcard from './Components/LoginLogoutCard';
+import RadioCard from './Components/RadioCard';
+import EmployeeRecord from './Components/EmployeeRecord';
+import IntParent from './Components/Intermediate/IntParent';
+import AdParent from './Components/Advance/AdParent';
+
+function App() {
+  return (
+    <React.Fragment>
+      <Router>
+        <Navbar/>
+        {/* <Parent/> */}
+        <Switch>
+          <Route exact path="/" component={Wish}></Route>
+          <Route exact path="/smsapp" component={SmsApp}></Route>
+          <Route exact path="/counter" component={Counter}></Route>
+          <Route exact path="/showpassword" component={ShowPassword}></Route>
+          <Route exact path="/showusername" component={ShowUsername}></Route>
+          <Route exact path="/table" component={Table}></Route>
+          <Route exact path="/selectcar" component={SelectCar}></Route>
+          <Route exact path="/registrationform" component={RegistrationForm}></Route>
+          <Route exact path="/LoginLogoutcard" component={LoginLogoutcard}></Route>
+          <Route exact path="/radiocard" component={RadioCard}></Route>
+          <Route exact path="/EmployeeRecord" component={EmployeeRecord}></Route>
+          <Route exact path="/Parent" component={Parent}></Route>
+          <Route exact path="/IntParent" component={IntParent}></Route>
+          <Route exact path="/AdParent" component={AdParent}></Route>
+
+          
+        </Switch>
+      </Router>
+    </React.Fragment>
+  );
+}
+
+
+export default App;
+
+
+//showPassword, smsApp, table, wish, counter, selectCar, 

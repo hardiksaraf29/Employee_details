@@ -1,0 +1,13 @@
+#CounterBtn
+{
+    border-radius: 20px !important;
+    border: white solid 2px;
+    background-color: rgba(0px, 0px, 0px, 1px);
+    background-color: white      !important;
+}
+
+#CounterBtn:hover
+{
+    color: white !important;
+    background-color: gray !important;
+}
