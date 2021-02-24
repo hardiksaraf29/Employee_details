@@ -34,6 +34,7 @@ let UseRefCard = () => {
                                                 <input type="checkbox"
                                                     className="form-check-input"
                                                 />
+                                                
                                                 <label className="form-check-label">Terms And Condition</label>
                                                 <button ref={registerBtn} onClick={showButton} className="btn btn-primary text-dark " type="submit" disabled>Click Here</button>
                                             </div>
